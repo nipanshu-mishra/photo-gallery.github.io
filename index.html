@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive photo gallery</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+<style media="screen">
+    * {
+        background-color: gray;
+        color: aliceblue;
+    }
+
+    header h1 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        background-color: aliceblue;
+        color: gray;
+        height: 50px;
+        text-align: center;
+        font-family: cursive;
+    }
+
+    .carousel {
+        max-width: 1000px;
+        margin-left: 180px;
+    }
+
+    .carousel-cell {
+        width: 10%;
+        margin-top: 50px;
+        margin-right: 10px;
+    }
+
+    .w3-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .main {
+        margin-top: 100px;
+        margin-left: 270px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer h5 {
+        margin-top: 50px;
+        color: gray;
+        background-color: aliceblue;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Photo Gallery</h1>
+    </header>
+    <h1 class="w3-center">Responsive photo gallery</h1>
+    <div class="carousel" data-flickity='{"groupCells": true}'>
+        <div class="carousel-cell">
+            <img class="w3-image" src="images/image1.jpeg" alt="apple-tree" id="thumb1">
+        </div>
+        <div class="carousel-cell">
+            <img class="w3-image" src="images/image2.jpeg" alt="orange" id="thumb2">
+        </div>
+        <div class="carousel-cell">
+            <img class="w3-image" src="images/image3.jpeg" alt="grapes"  id="thumb3">
+        </div>
+        <div class="carousel-cell">
+            <img class="w3-image" src="images/image4.jpeg" alt="apple" id="thumb4">
+        </div>
+        <div class="carousel-cell">
+            <img class="w3-image" src="images/image5.jpeg" alt="blueberry" id="thumb5">
+        </div>
+        <div class="carousel-cell">
+            <img class="w3-image" src="images/image6.jpeg" alt="lemon" id="thumb6">
+        </div>
+        <div class="carousel-cell">
+            <img class="w3-image" src="images/image7.jpeg" alt="strawberry" id="thumb7">
+        </div>
+        <div class="carousel-cell">
+            <img class="w3-image" src="images/image8.jpeg" alt="strawberry-white" id="thumb8">
+        </div>
+        <div class="carousel-cell">
+            <img class="w3-image" src="images/image9.jpeg" alt="apple-green" id="thumb9">
+        </div>
+        <div class="carousel-cell">
+            <img class="w3-image" src="images/image10.jpeg" alt="vegetables" id="thumb10">
+        </div>
+        <div class="carousel-cell">
+            <img class="w3-image" src="images/image1.jpeg" alt="apple-tree" id="thumb11">
+        </div>
+        <div class="carousel-cell">
+            <img class="w3-image" src="images/image2.jpeg" alt="orange" id="thumb12">
+        </div>
+        <div class="carousel-cell">
+            <img class="w3-image" src="images/image3.jpeg" alt="grapes"  id="thumb13">
+        </div>
+        <div class="carousel-cell">
+            <img class="w3-image" src="images/image4.jpeg" alt="apple" id="thumb14">
+        </div>
+        <div class="carousel-cell">
+            <img class="w3-image" src="images/image5.jpeg" alt="blueberry" id="thumb15">
+        </div>
+    </div>
+
+    <div class="main">
+        <img src="images/image1.jpeg" id="mainImg" height="600px" width="800px">
+    </div>
+
+    <footer>
+        <h5>Responsive photo gallery</h5>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="custom.js"></script>
+
+</body>
+
+</html>
